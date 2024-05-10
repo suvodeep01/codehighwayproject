@@ -199,12 +199,14 @@
                         link.download = file + '.rar'; // You can adjust the file names if needed
                         document.body.appendChild(link);
                         link.click();
+                        window.setTimeout(window.location.href = "php_project.html",10000);
                     });
-                    window.setTimeout(window.location.href = "php_project.html",12000);
+                    
                 }
 
                 // Wait for 3 seconds (adjust as needed) before downloading files
                 setTimeout(downloadFiles, 10000); // Adjust delay in milliseconds as needed
+               
             } else {
                 console.error('No files parameter found in the URL.');
             }
